@@ -1,17 +1,9 @@
 <footer id="colophon">
 	<div class="container">
-		<div class="three columns">
-			<nav id="footer-nav">
-				<?php wp_nav_menu(array('theme_location' => 'footer_menu')); ?>
-			</nav>
-		</div>
-		<div class="five columns">
-			<div class="credits">
-				<span class="credits-title">Apoio</span>
-				<a href="http://culturainglesasp.com.br/" rel="external" target="_blank" title="Cultura Inglesa"><img alt="Cultura Inglesa" src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo-cultura.png" /></a>
-				<a href="http://cultura.gov.br/" rel="external" target="_blank" title="Ministério da Cultura"><img alt="Ministério da Cultura" src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo-minc.png" /></a>
+		
+		<div class="eight columns">
+			<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/footer-02.png" alt="<?php bloginfo('name'); ?>" class="scale-with-grid" />
 			</div>
-		</div>
 		<div class="one column">
 			<div class="cc">
 				<p xmlns:dct="http://purl.org/dc/terms/" xmlns:vcard="http://www.w3.org/2001/vcard-rdf/3.0#">
@@ -21,13 +13,13 @@
 					<span class="text">
 						To the extent possible under law,
 						<a rel="dct:publisher"
-						href="http://arteforadomuseu.com.br/">
-						<span property="dct:title">Arte Fora do Museu</span></a>
+						href="http://bhasia.art.br/">
+						<span property="dct:title">BHÁsia</span></a>
 						has waived all copyright and related or neighboring rights to
-						<span property="dct:title">Arte Fora do Museu</span>.
+						<span property="dct:title">BHÁsia</span>.
 						This work is published from:
 						<span property="vcard:Country" datatype="dct:ISO3166"
-						content="BR" about="http://arteforadomuseu.com.br/">
+						content="BR" about="http://bhasia.art.br/">
 						Brasil</span>.
 					</span>
 				</p>

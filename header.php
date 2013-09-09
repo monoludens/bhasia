@@ -52,6 +52,9 @@
 				<div id="masthead-nav">
 					<div class="clearfix">
 						<nav id="main-nav">
+
+							<?php wp_nav_menu(array('theme_location' => 'footer_menu')); ?>
+							
 							<ul>
 								<li><a href="<?php echo afdm_artguides_get_archive_link(); ?>"><?php _e('Art guides', 'arteforadomuseu'); ?></a></li>
 								<li><a href="<?php echo afdm_artists_get_archive_link(); ?>"><?php _e('Artists', 'arteforadomuseu'); ?></a></li>
@@ -85,7 +88,7 @@
 							</ul>
 						</nav>
 						<?php get_search_form(); ?>
-						<?php afdm_get_user_menu(); ?>
+						
 					</div>
 				</div>
 			</div>
