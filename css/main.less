@@ -162,6 +162,7 @@ body {
 @main-color: #EFEFEF;
 @secondary-color: #999999;
 @third-color: #424242;
+@orange: #F37021;
 	
 .button,
 a.button,
@@ -384,7 +385,7 @@ input[type=submit] {
 					&.categories {
 						> a {
 							padding: 10px !important;
-							color: #fff;
+							color: @orange;
 							font-weight: 800;
 							.transition(all 0);
 						}
@@ -446,7 +447,7 @@ input[type=submit] {
 							li {
 								margin: 0;
 								padding: 0;
-								border-bottom: 1px solid #ccc;
+								border-bottom: 1px solid @orange;
 								a {
 									font-size: 12px;
 									padding: 15px !important;
@@ -455,7 +456,7 @@ input[type=submit] {
 									font-weight: 800;
 									color: #666;
 									&:hover {
-										color: #f0f0f0;
+										color: @orange;
 									}
 								}
 								&:last-child {
