@@ -2,7 +2,7 @@
 	<div class="container">
 		
 		<div class="eight columns">
-			<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/footer-02.png" alt="<?php bloginfo('name'); ?>" class="scale-with-grid" />
+			<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logos-footer-02.png" alt="<?php bloginfo('name'); ?>" class="scale-with-grid" />
 			</div>
 		<div class="one column">
 			<div class="cc">
