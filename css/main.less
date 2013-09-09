@@ -160,6 +160,7 @@ body {
 @arquitetura: #3ebee2;
 
 @main-color: #c4c4c4;
+@secondary-color: #c4c4c4;
 
 .button,
 a.button,
@@ -228,7 +229,7 @@ input[type=submit] {
 	right: 0;
 	width: 100%;
 	height: @top;
-	background: #C4C4C4;
+	background: @main-color;
 	z-index: 900;
 	.transition(all .2s ease-in-out);
 	&.scrolled {
@@ -751,7 +752,7 @@ input[type=submit] {
 	height: auto;
 	min-width: 350px;
 	color: #f0f0f0;
-	background: #333;
+	background: @secondary-color;
 	position: absolute;
 	top: @top;
 	bottom: @bottom;
