@@ -53,8 +53,8 @@
 					<div class="clearfix">
 						<nav id="main-nav">
 
-							<?php wp_nav_menu(array('theme_location' => 'footer_menu')); ?>
-							
+							<?#php wp_nav_menu(array('theme_location' => 'footer_menu')); ?>
+
 							<ul>
 								<li><a href="<?php echo afdm_artguides_get_archive_link(); ?>"><?php _e('Art guides', 'arteforadomuseu'); ?></a></li>
 								<li><a href="<?php echo afdm_artists_get_archive_link(); ?>"><?php _e('Artists', 'arteforadomuseu'); ?></a></li>
