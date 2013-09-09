@@ -137,7 +137,7 @@ body {
 .loading-map,
 .displaying-map {
 	.transition(background-color 1s linear);
-	background-color: #1f1f1f;
+	background-color: @main-color;
 	overflow: hidden;
 }
 
@@ -158,6 +158,8 @@ body {
 @grafite: #3ec744;
 @escultura: #f32419;
 @arquitetura: #3ebee2;
+
+@main-color: #c4c4c4;
 
 .button,
 a.button,
@@ -226,7 +228,7 @@ input[type=submit] {
 	right: 0;
 	width: 100%;
 	height: @top;
-	background: #1f1f1f;
+	background: #C4C4C4;
 	z-index: 900;
 	.transition(all .2s ease-in-out);
 	&.scrolled {
@@ -477,7 +479,7 @@ input[type=submit] {
 			height: 38px;
 			z-index: 2;
 			> div {
-				background: #1f1f1f;
+				background: #C4C4C4;
 				height: 38px;
 				clear: both;
 				input#s {
@@ -529,7 +531,7 @@ input[type=submit] {
 				text-transform: uppercase;
 				color: #f9f9f9;
 				font-weight: 800;
-				.gradient(#1f1f1f, #191919, #1f1f1f);
+				.gradient(@main-color, #191919, @main-color);
 				text-shadow: 1px 1px 1px rgba(0,0,0,1);
 				position: relative;
 				cursor: default;
@@ -1800,7 +1802,7 @@ input[type=submit] {
 	height: @bottom;
 	width: 100%;
 	padding: 0;
-	background: #1f1f1f;
+	background: @main-color;
 	z-index: 101;
 	#footer-nav {
 		.menu {
