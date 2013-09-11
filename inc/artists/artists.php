@@ -615,7 +615,7 @@ class ArteForaDoMuseu_Artists {
 		));
 	}
 
-	/*function add_artwork_box() {
+	function add_artwork_box() {
 		$artists = get_posts(array(
 			'post_type' => $this->post_type,
 			'post_status' => array('publish', 'private', 'pending', 'draft', 'future'),
@@ -648,7 +648,7 @@ class ArteForaDoMuseu_Artists {
 			</div>
 		</div>
 		<?php
-	}*/
+	}
 
 	function add_artwork_button($artwork_id = false) {
 		global $post;
