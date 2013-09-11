@@ -35,7 +35,7 @@
 	}(document, 'script', 'facebook-jssdk'));</script>
 	<header id="masthead">
 		<div class="container">
-			<div class="three columns">
+			<div class="five columns">
 				<div class="site-meta">
 					<h1>
 						<a href="<?php echo home_url('/'); ?>" title="<?php bloginfo('name'); ?>">
@@ -45,9 +45,9 @@
 					</h1>
 				</div>
 			</div>
-			<div class="two columns">
+			<!-- <div class="two columns">
 				<?php afdm_city_selector(); ?>
-			&nbsp;</div>
+			&nbsp;</div> -->
 			<div class="seven columns">
 				<div id="masthead-nav">
 					<div class="clearfix">
