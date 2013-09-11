@@ -503,9 +503,9 @@ class ArteForaDoMuseu_ArtGuides {
 		$artwork_id = $artwork_id ? $artwork_id : $post->ID;
 		if(!$this->can_edit_any())
 			return false;
-		?>
+		/*?>
 		<a class="add_artwork_to_guide" data-artwork="<?php echo $artwork_id; ?>" data-artwork-title="<?php echo get_the_title($artwork_id); ?>" href="#"><span class="lsf">&#xE041;</span> <?php _e('Add to art guide', 'arteforadomuseu'); ?></a>
-		<?php
+		<?php*/
 	}
 
 	function hook_remove_artwork_button() {
@@ -574,7 +574,7 @@ class ArteForaDoMuseu_ArtGuides {
 	function add_artwork_box() {
 		$user_guides = $this->get_from_user();
 		?>
-		<div id="add_artwork_to_guide">
+		<!--<div id="add_artwork_to_guide">
 			<h2 class="lightbox_title"><span class="lsf">&#xE041;</span> <?php printf(__('Add &ldquo;%s&rdquo; to:', 'arteforadomuseu'), '<span class="title"></span>'); ?></h2>
 			<div class="lightbox_content">
 				<?php if($user_guides) : ?>
@@ -608,7 +608,7 @@ class ArteForaDoMuseu_ArtGuides {
 					</div>
 				</form>
 			</div>
-		</div>
+		</div>-->
 		<?php
 	}
 
