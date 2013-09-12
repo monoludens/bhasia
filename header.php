@@ -49,6 +49,23 @@
 				<?php afdm_city_selector(); ?>
 			&nbsp;</div> -->
 			<div class="seven columns">
+				<?php if(function_exists('qtrans_getLanguage')) : ?>
+					<nav id="langnav">
+						<ul>
+							<?php
+							global $q_config;
+							if(is_404()) $url = get_option('home'); else $url = '';
+							$current = qtrans_getLanguage();
+							foreach($q_config['enabled_languages'] as $language) {
+								$attrs = '';
+								if($language == $current)
+									$attrs = 'class="active"';
+								echo '<li><a href="' . qtrans_convertURL($url, $language) . '" ' . $attrs . '>' . $language . '</a></li>';
+							}
+							?>
+						</ul>
+					</nav>
+				<?php endif; ?>
 				<div id="masthead-nav">
 					<div class="clearfix">
 						<nav id="main-nav">
@@ -91,23 +108,6 @@
 						<?php get_search_form(); ?>
 					</div>
 				</div>
-				<?php if(function_exists('qtrans_getLanguage')) : ?>
-					<nav id="langnav">
-						<ul>
-							<?php
-							global $q_config;
-							if(is_404()) $url = get_option('home'); else $url = '';
-							$current = qtrans_getLanguage();
-							foreach($q_config['enabled_languages'] as $language) {
-								$attrs = '';
-								if($language == $current)
-									$attrs = 'class="active"';
-								echo '<li><a href="' . qtrans_convertURL($url, $language) . '" ' . $attrs . '>' . $language . '</a></li>';
-							}
-							?>
-						</ul>
-					</nav>
-				<?php endif; ?>
 			</div>
 		</div>
 	</header>
