@@ -90,24 +90,24 @@
 						</nav>
 						<?php get_search_form(); ?>
 					</div>
-					<?php if(function_exists('qtrans_getLanguage')) : ?>
-						<nav id="langnav">
-							<ul>
-								<?php
-								global $q_config;
-								if(is_404()) $url = get_option('home'); else $url = '';
-								$current = qtrans_getLanguage();
-								foreach($q_config['enabled_languages'] as $language) {
-									$attrs = '';
-									if($language == $current)
-										$attrs = 'class="active"';
-									echo '<li><a href="' . qtrans_convertURL($url, $language) . '" ' . $attrs . '>' . $language . '</a></li>';
-								}
-								?>
-							</ul>
-						</nav>
-					<?php endif; ?>
 				</div>
 			</div>
+			<?php if(function_exists('qtrans_getLanguage')) : ?>
+				<nav id="langnav">
+					<ul>
+						<?php
+						global $q_config;
+						if(is_404()) $url = get_option('home'); else $url = '';
+						$current = qtrans_getLanguage();
+						foreach($q_config['enabled_languages'] as $language) {
+							$attrs = '';
+							if($language == $current)
+								$attrs = 'class="active"';
+							echo '<li><a href="' . qtrans_convertURL($url, $language) . '" ' . $attrs . '>' . $language . '</a></li>';
+						}
+						?>
+					</ul>
+				</nav>
+			<?php endif; ?>
 		</div>
 	</header>
