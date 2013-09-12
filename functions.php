@@ -143,3 +143,21 @@ function afdm_flush_rewrite() {
 	}
 }
 add_action('init', 'afdm_flush_rewrite');
+
+
+/**
+ * Register sidebars and widgetized areas.
+ *
+ */
+function arphabet_widgets_init() {
+
+	register_sidebar( array(
+		'name' => 'language widget',
+		'id' => 'language_widget',
+		'before_widget' => '<div class="language-widget">',
+		'after_widget' => '</div>',
+		'before_title' => '<p>',
+		'after_title' => '</p>',
+	) );
+}
+add_action( 'widgets_init', 'arphabet_widgets_init' );
