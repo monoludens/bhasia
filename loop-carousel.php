@@ -10,7 +10,7 @@
 						</div>
 						<header class="post-header">
 							<?php do_action('afdm_loop_before_artwork_header'); ?>
-							<p class="category"><?php echo get_the_category_list(', '); ?></p>
+							<!-- <p class="category"><?php echo get_the_category_list(', '); ?></p> -->
 							<h3><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h3>
 							<?php /*
 							<p class="meta">

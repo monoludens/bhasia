@@ -12,7 +12,7 @@
 							<?php endif; ?>
 							<header class="post-header">
 								<?php do_action('afdm_loop_before_artwork_header'); ?>
-								<p class="category"><?php echo get_the_category_list(', '); ?></p>
+								<!-- <p class="category"><?php echo get_the_category_list(', '); ?></p> -->
 								<h3><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h3>
 								<p class="meta">
 									<span class="date"><span class="lsf">&#xE12b;</span> <?php echo get_the_date(); ?></span>
