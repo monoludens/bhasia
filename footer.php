@@ -25,7 +25,7 @@
 				</p>
 			</div>
 		</div>
-		<div class="three columns">
+		<div>
 			<div class="social">
 				<div class="social-interaction">
 					<a href="https://twitter.com/arteforadomuseu" class="twitter-follow-button" data-show-count="false" data-lang="pt" data-show-screen-name="false">Seguir @arteforadomuseu</a>
