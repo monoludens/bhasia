@@ -4,7 +4,6 @@
  */
 ?>
 <?php the_post_thumbnail('thumbnail'); ?>
-<?php the_category(); ?>
 <h4><?php the_title(); ?></h4>
 <?php if(afdm_has_artist()) : ?>
 	<div class="meta">
