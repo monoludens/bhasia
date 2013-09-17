@@ -35,7 +35,7 @@
 	}(document, 'script', 'facebook-jssdk'));</script>
 	<header id="masthead">
 		<div class="container">
-			<div class="five columns">
+			<div class="logo">
 				<div class="site-meta">
 					<h1>
 						<a href="<?php echo home_url('/'); ?>" title="<?php bloginfo('name'); ?>">
@@ -48,7 +48,7 @@
 			<!-- <div class="two columns">
 				<?php afdm_city_selector(); ?>
 			&nbsp;</div> -->
-			<div class="seven columns">
+			<div class="main-menu">
 				<?php if(function_exists('qtrans_getLanguage')) : ?>
 					<nav id="langnav">
 						<ul>
