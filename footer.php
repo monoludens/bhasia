@@ -25,9 +25,10 @@
 				</p>
 			</div>
 			<div class="arteforadomuseu">
-					<a href="http://www.arteforadomuseu.com.br/">
-					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/arteforadomuseu-logo.png" alt="<?php bloginfo('name'); ?>" alt="Arte Fora do Museu" class="scale-with-grid">
-				</a>
+					<p><a href="http://www.arteforadomuseu.com.br/">
+						<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/arteforadomuseu-logo.png" alt="<?php bloginfo('name'); ?>" alt="Arte Fora do Museu" class="scale-with-grid">
+					</a>
+				</p>
 			</div>
 		</div>
 		<div>
