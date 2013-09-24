@@ -117,17 +117,17 @@ function afdm_city_not_found_message() {
 	global $wp_query;
 	if(get_query_var('city_not_found')) {
 		?>
-		<div class="content-message">
-			<!-- <p>
+		<!-- <div class="content-message">
+			<p>
 				<?php _e('We couldn\'t find anything for your city.', 'arteforadomuseu'); ?><br />
 				<?php _e('Showing all cities results', 'arteforadomuseu'); ?>
-			</p> -->
+			</p>
 			<?php if(is_user_logged_in()) { ?>
 				<p><a href="#" class="button add_artwork"><?php _e('Click here to add an artwork', 'arteforadomuseu'); ?></a></p>
 			<?php } else { ?>
 				<p><a href="#"><?php _e('Login to submit an artwork!', 'arteforadomuseu'); ?></a></p>
 			<?php } ?>
-		</div>
+		</div> -->
 		<?php
 	}
 }
