@@ -26,7 +26,7 @@
 			</div>
 			<div class="arteforadomuseu">
 					<a href="http://www.arteforadomuseu.com.br/">
-					<img src="" alt="<?php echo get_stylesheet_directory_uri(); ?>/img/arteforadomuseu-logo.png" alt="<?php bloginfo('name'); ?>">
+					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/arteforadomuseu-logo.png" alt="<?php bloginfo('name'); ?>" alt="Arte Fora do Museu" class="scale-with-grid">
 				</a>
 			</div>
 		</div>
