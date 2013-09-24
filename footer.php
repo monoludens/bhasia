@@ -1,10 +1,10 @@
 <footer id="colophon">
 	<div class="container">
 		
-		<div class="eight columns">
+		<div class="seven columns">
 			<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logos-footer-04.png" alt="<?php bloginfo('name'); ?>" class="scale-with-grid" />
 			</div>
-		<div class="two columns">
+		<div class="three columns">
 			<div class="cc">
 				<p xmlns:dct="http://purl.org/dc/terms/" xmlns:vcard="http://www.w3.org/2001/vcard-rdf/3.0#">
 					<a rel="license" href="http://creativecommons.org/publicdomain/zero/1.0/">
