@@ -4,7 +4,7 @@
 		<div class="eight columns">
 			<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logos-footer-04.png" alt="<?php bloginfo('name'); ?>" class="scale-with-grid" />
 			</div>
-		<div class="one column">
+		<div class="two columns">
 			<div class="cc">
 				<p xmlns:dct="http://purl.org/dc/terms/" xmlns:vcard="http://www.w3.org/2001/vcard-rdf/3.0#">
 					<a rel="license" href="http://creativecommons.org/publicdomain/zero/1.0/">
@@ -23,6 +23,11 @@
 						Brasil</span>.
 					</span>
 				</p>
+			</div>
+			<div class="arteforadomuseu">
+					<a href="http://www.arteforadomuseu.com.br/">
+					<img src="" alt="<?php echo get_stylesheet_directory_uri(); ?>/img/arteforadomuseu-logo.png" alt="<?php bloginfo('name'); ?>">
+				</a>
 			</div>
 		</div>
 		<div>
