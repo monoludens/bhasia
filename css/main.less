@@ -381,6 +381,11 @@ input[type=submit] {
 		position: static;
 		float: right;
 		.transition(margin-top .2s ease-in-out);
+		#main-nav{
+			.menu-top-container{
+				float:right;
+			}
+		}
 		nav {
 			.menu{
 				float: right;
@@ -391,7 +396,7 @@ input[type=submit] {
 					margin: 0 10px 0 0;
 					display: inline-block;
 					> a {
-						font-weight: 200;
+						font-weight: 500;
 						text-transform: uppercase;
 						font-size: 14px;
 						border-bottom: 1px solid transparent;
@@ -470,6 +475,7 @@ input[type=submit] {
 								margin: 0;
 								padding: 0;
 								border-bottom: 1px solid #ccc;
+								width: 200px;
 								a {
 									font-size: 12px;
 									padding: 15px !important;
@@ -478,7 +484,7 @@ input[type=submit] {
 									font-weight: 800;
 									color: #666;
 									&:hover {
-										color: @orange;
+										/*color: @orange;*/
 									}
 								}
 								&:last-child {
