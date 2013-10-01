@@ -404,7 +404,7 @@ input[type=submit] {
 						color: @orange;
 						&:hover {
 							color: @secondary-color;
-							background: @orange;
+							background-color: @orange;
 							border-color: darken(@orange, 10%);
 							.border-radius(0 0 0);
 						}
@@ -447,7 +447,7 @@ input[type=submit] {
 						&:hover {
 							> a,
 							.current-menu-item {
-								background-color: @orange;
+								background-color: @orange !important;
 								color: #333 !important;
 								.gradient(#f0f0f0, #f0f0f0, #ccc);
 								.box-shadow(0 0 0);
@@ -474,7 +474,7 @@ input[type=submit] {
 							border: 0;
 							li {
 								&:hover{
-									background-color: @orange;
+									background-color: @orange !important;
 									a{
 										background-color: @orange !important;
 									}
@@ -491,6 +491,7 @@ input[type=submit] {
 									font-weight: 800;
 									color: #666;
 									&:hover {
+										background-color: @orange !important;
 										color: @orange;
 									}
 								}
