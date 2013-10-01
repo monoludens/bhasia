@@ -409,6 +409,17 @@ input[type=submit] {
 							.border-radius(0 0 0);
 						}
 					}
+					ul{
+						li{
+							&:hover{
+								a{
+									color: #fff;
+									width: 100px;
+									background-color: @orange;
+								}
+							}
+						}
+					}
 					&.categories {
 						> a {
 							padding: 10px !important;
@@ -447,7 +458,6 @@ input[type=submit] {
 						&:hover {
 							> a,
 							.current-menu-item {
-								background-color: @orange !important;
 								color: #333 !important;
 								.gradient(#f0f0f0, #f0f0f0, #ccc);
 								.box-shadow(0 0 0);
