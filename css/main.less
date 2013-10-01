@@ -390,7 +390,7 @@ input[type=submit] {
 			.menu{
 				float: right;
 			}
-			ul {
+			ul { /*-----menu-----*/
 				float: right;
 				> li {
 					margin: 0 10px 0 0;
@@ -398,7 +398,6 @@ input[type=submit] {
 					&:hover{
 						a{
 							color: #fff;
-							background-color: @orange;
 						}
 					}
 					> a {
@@ -408,6 +407,7 @@ input[type=submit] {
 						border-bottom: 1px solid transparent;
 						.border-radius(0 0 0 0);
 						color: @orange;
+						background-color: @orange;
 						&:hover {
 							color: @secondary-color;
 							background-color: @orange;
@@ -415,9 +415,10 @@ input[type=submit] {
 							.border-radius(0 0 0);
 						}
 					}
-					ul{
+					ul{/*-----submenu-----*/
 						li{
-							display: inline-block;
+							display: block;
+							width: 200px;
 							&:hover{
 								a{
 									color: #fff;
