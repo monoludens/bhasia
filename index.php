@@ -30,9 +30,9 @@
 		endif; 
 		wp_reset_query();
 		?>
-<!-- 
+
 		<?php get_template_part('content', 'popular'); ?>
- -->
+
 		<?php do_action('afdm_before_content'); ?>
 
 	<?php endif; ?>
