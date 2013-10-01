@@ -30,17 +30,17 @@
 		endif; 
 		wp_reset_query();
 		?>
-
+<!-- 
 		<?php get_template_part('content', 'popular'); ?>
-
+ -->
 		<?php do_action('afdm_before_content'); ?>
 
 	<?php endif; ?>
 
 	<div class="child-section">
-		<div class="section-title">
+		<!-- <div class="section-title">
 			<h2><?php _e('Latest artworks', 'arteforadomuseu'); ?></h2>
-		</div>
+		</div> -->
 		<?php get_template_part('loop'); ?>
 	</div>
 </section>
