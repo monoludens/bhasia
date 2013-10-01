@@ -47,7 +47,7 @@
 					<?php if(!is_paged()) : ?>
 						<div class="row">
 							<div class="seven columns">
-								<section class="featured">
+								<!-- <section class="featured">
 									<?php
 									$featured = get_posts(array('posts_per_page' => 1, 'post_type' => 'artist', 'jeo_featured' => 1));
 									if($featured) : ?>
@@ -77,7 +77,7 @@
 										endforeach;
 										?>
 									<?php endif; ?>
-								</section>
+								</section> -->
 							</div>
 							<div class="four columns offset-by-one">
 								<section class="popular">
