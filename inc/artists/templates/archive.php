@@ -46,8 +46,8 @@
 				<?php else : ?>
 					<?php if(!is_paged()) : ?>
 						<div class="row">
-							<div class="seven columns">
-								<!-- <section class="featured">
+							<!-- <div class="seven columns">
+								<section class="featured">
 									<?php
 									$featured = get_posts(array('posts_per_page' => 1, 'post_type' => 'artist', 'jeo_featured' => 1));
 									if($featured) : ?>
@@ -77,7 +77,7 @@
 										endforeach;
 										?>
 									<?php endif; ?>
-								</section> -->
+								</section>
 							</div>
 							<div class="four columns offset-by-one">
 								<section class="popular">
@@ -102,14 +102,14 @@
 										?>
 									<?php endif; ?>
 								</section>
-							</div>
+							</div> -->
 						</div>
 					<?php endif; ?>
 					<div class="row">
 						<section class="recent">
-							<div class="twelve columns">
+							<!-- <div class="twelve columns">
 								<h2><?php _e('Recently published', 'arteforadomuseu'); ?></h2>
-							</div>
+							</div> -->
 							<div class="regular-list">
 								<?php while(have_posts()) : the_post(); ?>
 									<article id="artist-<?php the_ID(); ?>" class="clearfix">
