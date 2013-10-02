@@ -465,7 +465,7 @@ class ArteForaDoMuseu_Artists {
 			$mosaic = '<div class="artwork-mosaic images-' . count($image_ids) . ' clearfix">';
 			$i = 1;
 			foreach($image_ids as $image_id) {
-				$image_src = wp_get_attachment_image_src($image_id, 'thumbnail');
+				$image_src = wp_get_attachment_image_src($image_id, 'page-featured');
 				$mosaic .= '<div class="image-' . $i . '-container image-container">';
 				$mosaic .= '<a href="' . get_permalink($post_id) . '"><img src="' . $image_src[0] . '" class="image-' . $i . '" /></a>';
 				$mosaic .= '</div>';
