@@ -21,7 +21,7 @@ if(have_posts()) :
 				<h2><?php _e('Popular', 'arteforadomuseu'); ?></h2>
 			<?php endif; ?>
 		</div>
-		<div class="disable-autorun">
+		<div class="child-section">
 			<?php get_template_part('loop', 'carousel'); ?>
 		</div>
 	</div>
