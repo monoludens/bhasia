@@ -13,17 +13,15 @@ query_posts($query);
 if(have_posts()) :
 	?>
 
-	<div class="child-section popular-section">
-		<div class="section-title featured">
+	<div class="child-section">
+		<!-- <div class="section-title featured">
 			<?php if($city && !get_query_var('city_not_found')) : ?>
 				<h2><?php _e('Popular in', 'arteforadomuseu'); ?> <?php echo $city; ?></h2>
 			<?php else : ?>
 				<h2><?php _e('Popular', 'arteforadomuseu'); ?></h2>
 			<?php endif; ?>
-		</div>
-		<div class="child-section">
+		</div> -->
 			<?php get_template_part('loop', 'carousel'); ?>
-		</div>
 	</div>
 
 <?php
