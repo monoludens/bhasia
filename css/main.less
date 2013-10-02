@@ -1909,54 +1909,58 @@ input[type=submit] {
 			}
 		}
 	}
-	.cc {
-		float: left;
-		max-width: 110px;
-		p {
-			position: relative;
-			margin: 20px 10px 0 20px;
-			img {
-				opacity: .6;
-			}
-			.text {
-				display: none;
-				position: absolute;
-				z-index: 9999;
-				bottom: 30px;
-				left: 50%;
-				margin-left: -90px;
-				width: 150px;
-				background: #111;
-				padding: 10px;
-				font-size: 11px;
-				.box-shadow(0 2px 5px rgba(0,0,0,0.8));
-				&:after {
-					content: '';
-					width: 0;
-					height: 0;
-					border-left: 10px solid transparent;
-					border-right: 10px solid transparent;
-					border-top: 10px solid #111;
-					position: absolute;
-					bottom: -10px;
-					left: 50%;
-					z-index: 1000;
+	.stamps{
+		float: right;
+		margin-right: 10px;
+		.cc {
+			float: left;
+			max-width: 110px;
+			p {
+				position: relative;
+				margin: 20px 10px 0 20px;
+				img {
+					opacity: .6;
 				}
-			}
-			&:hover {
 				.text {
-					display: block;
+					display: none;
+					position: absolute;
+					z-index: 9999;
+					bottom: 30px;
+					left: 50%;
+					margin-left: -90px;
+					width: 150px;
+					background: #111;
+					padding: 10px;
+					font-size: 11px;
+					.box-shadow(0 2px 5px rgba(0,0,0,0.8));
+					&:after {
+						content: '';
+						width: 0;
+						height: 0;
+						border-left: 10px solid transparent;
+						border-right: 10px solid transparent;
+						border-top: 10px solid #111;
+						position: absolute;
+						bottom: -10px;
+						left: 50%;
+						z-index: 1000;
+					}
+				}
+				&:hover {
+					.text {
+						display: block;
+					}
 				}
 			}
 		}
-	}
-	.arteforadomuseu{
-		float: left;
-		max-width: 110px;
-		p{
-			margin: 15px 0 20px 20px;
-			img {
-				opacity: .6;
+		.arteforadomuseu{
+			float: left;
+			max-width: 110px;
+			p{
+				margin: 15px 0 20px 20px;
+				img {
+					opacity: .6;
+				}
 			}
 		}
 	}
