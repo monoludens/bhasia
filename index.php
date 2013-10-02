@@ -22,7 +22,7 @@
 			?>
 			<div class="featured-section">
 				<div class="section-title">
-					<h2><?php _e('Featured artists', 'arteforadomuseu'); ?></h2>
+					<h2><?php _e('Artists', 'arteforadomuseu'); ?></h2>
 				</div>
 				<?php get_template_part('loop', 'carousel'); ?>
 			</div>

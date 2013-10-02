@@ -206,8 +206,8 @@ msgid "Previous"
 msgstr "Anterior"
 
 #: ../index.php:20
-msgid "Artists"
-msgstr "Artistas"
+msgid "Featured artists"
+msgstr "Artistas em destaque"
 
 #: ../inc/featured.php:33
 #: ../inc/artworks/artworks.php:339
