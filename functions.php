@@ -12,7 +12,7 @@ function afdm_setup() {
 	add_theme_support('post-thumbnails');
 	add_image_size('page-featured', 680, 270, true);
 	add_image_size('featured-squared', 400, 400, true);
-	add_image_size('featured-rectangle', 388, 400, true);
+	add_image_size('featured-rectangle', 388, 150, true);
 }
 add_action('after_setup_theme', 'afdm_setup');
 
