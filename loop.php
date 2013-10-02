@@ -7,7 +7,7 @@
 						<div class="clearfix">
 							<?php if(has_post_thumbnail()) : ?>
 								<div class="thumbnail-container">
-									<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_post_thumbnail('thumbnail'); ?></a>
+									<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_post_thumbnail('featured-rectangle'); ?></a>
 								</div>
 							<?php endif; ?>
 							<header class="post-header">
