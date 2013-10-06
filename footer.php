@@ -1,9 +1,9 @@
 <footer id="colophon">
 	<div class="container">
 		
-		<div class="seven columns">
+		<div class="logo-ruler">
 			<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logos-footer-04.png" alt="<?php bloginfo('name'); ?>" class="scale-with-grid" />
-			</div>
+		</div>
 		<div class="stamps">
 			<div class="cc">
 				<p xmlns:dct="http://purl.org/dc/terms/" xmlns:vcard="http://www.w3.org/2001/vcard-rdf/3.0#">
