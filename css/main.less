@@ -2578,14 +2578,14 @@ body.wysiwyg p {
 @media screen and (max-width: 767px) {
 	#content,
 	.middle-content {
-		padding-top: @top;
+		padding-top: @top2;
 	}
 	.hide-if-mobile {
 		display: none !important;
 	}
 	.displaying-map #masthead,
 	#masthead {
-		height: 150px !important;
+		height: @top2 !important;
 		/*&.scrolled {
 			height: 90px !important;
 			overflow: hidden;
@@ -2604,7 +2604,7 @@ body.wysiwyg p {
 		#masthead-nav {
 			#main-nav {
 				//clip: rect(0 0 0 0);
-				max-height: 0;
+				/*max-height: 0;
 				position: fixed !important;
 				overflow: hidden;
 				display: block;
@@ -2658,7 +2658,7 @@ body.wysiwyg p {
 			}
 			#searchform {
 				display: none !important;
-				/*width: 50%;
+				width: 50%;
 				height: auto;
 				position: absolute;
 				top: 100px;
@@ -2701,11 +2701,13 @@ body.wysiwyg p {
 	#nav-toggle {
 		display: block;
 		position: absolute;
-		top: 50px;
+		top: 25px;
+		right: 55px;
 		color: #fff;
 		text-decoration: none;
 		font-size: 40px !important;
-		right: 0;
+		background-color: @orange;
+		padding: 10px;
 		.lsf
 	}
 	/*.scrolled {
