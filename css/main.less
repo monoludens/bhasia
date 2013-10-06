@@ -1874,7 +1874,7 @@ input[type=submit] {
 	.logo-ruler{
 		width: 767px;
 		float: left;
-		margin: 10px 0;
+		margin: 0 10px;
 	}
 	#footer-nav {
 		.menu {
@@ -2591,6 +2591,10 @@ body.wysiwyg p {
 	.displaying-map #masthead,
 	#masthead {
 		height: @top2 !important;
+		.site-meta{
+			margin: 20px 0px;
+			width: 220px;
+		}
 		/*&.scrolled {
 			height: 90px !important;
 			overflow: hidden;
@@ -2608,6 +2612,9 @@ body.wysiwyg p {
 		}
 		*/	
 		#masthead-nav {
+			#searchform{
+				display: none !important;
+			}
 			#main-nav {
 				//clip: rect(0 0 0 0);
 				/*max-height: 0;
