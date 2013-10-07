@@ -2711,18 +2711,6 @@ body.wysiwyg p {
 		z-index: 99999;
 		max-height: 9999px;
 	}
-	#nav-toggle {
-		display: block;
-		position: absolute;
-		top: 25px;
-		right: 55px;
-		color: #fff;
-		text-decoration: none;
-		font-size: 40px !important;
-		background-color: @orange;
-		padding: 10px;
-		.lsf
-	}
 	/*.scrolled {
 		#nav-toggle {
 			top: 40px;
@@ -2730,7 +2718,29 @@ body.wysiwyg p {
 	}*/
 }
 
-
+@media screen and (max-width: 590px){
+	.displaying-map #masthead,
+	#masthead {
+		height: @top2 !important;
+		.site-meta{
+			margin: 20px 0px;
+			width: 220px;
+			font-size: 12px;
+		}
+		#nav-toggle {
+			display: block;
+			position: absolute;
+			top: 25px;
+			right: 55px;
+			color: #fff;
+			text-decoration: none;
+			font-size: 40px !important;
+			background-color: @orange;
+			padding: 10px;
+			.lsf
+		}
+	}
+}
 
 
 /*
