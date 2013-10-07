@@ -2650,16 +2650,26 @@ body.wysiwyg p {
 				overflow: hidden;
 				display: block;
 				zoom: 1;
-				top: 20px;
+				top: 60px;
 				right: 55px;
 				z-index: 99999;
 				background: #333;
 				
 				ul {
-					/*margin: 0;
+					margin: 0;
 					padding: 0;
 					float: right;
 					li {
+						margin: 5px !important;
+						border-right: @orange 1px solid;
+						&:last-child{
+							border-right: 0px;
+						}
+						a{
+							font-size: 12px;
+						}
+					}
+					/*li {
 						float: none !important;
 						display: block;
 						margin: 0 !important;
