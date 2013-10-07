@@ -2506,7 +2506,7 @@ body.wysiwyg p {
  * Responsive
  */
 
-@media only screen and (min-width: 1130px) and (max-width: 1260px) {
+@media only screen and (min-width: 960px) and (max-width: 1260px) {
 	.displaying-map #masthead,
 	#masthead {
 		#masthead-nav {
@@ -2517,9 +2517,6 @@ body.wysiwyg p {
 		}
 	}
 	#colophon {
-		.logo-ruler {
-		   width: 675px;
-		}
 		.stamps{
 			display: none;
 		}
@@ -2549,7 +2546,9 @@ body.wysiwyg p {
 	}
 	#colophon {
 		.logo-ruler {
-		   width: 625px;
+		    float: left;
+		    margin: 0 5%;
+		    width: 90%;
 		}
 		.stamps, .social{
 			display: none !important;
