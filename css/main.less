@@ -159,6 +159,7 @@ body {
 
 @top: 100px;
 @top2: 80px;
+@top3: 50px;
 @bottom: 70px;
 
 @gray: #999;
@@ -2634,9 +2635,13 @@ body.wysiwyg p {
 }
 
 @media screen and (max-width: 645px){
+	#content,
+	.middle-content {
+		padding-top: @top3;
+	}
 	.displaying-map #masthead,
 	#masthead {
-		height: @top2 !important;
+		height: @top3 !important;
 		.site-meta{
 			margin: 20px 0px;
 			width: 220px;
@@ -2653,7 +2658,7 @@ body.wysiwyg p {
 				top: 60px;
 				right: 0px;
 				z-index: 99999;
-				background: @secondary-color;
+				background: #E4E4E4;
 				width: 100%;
 				padding-right: 55px;
 				ul {
