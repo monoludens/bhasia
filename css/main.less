@@ -2608,99 +2608,8 @@ body.wysiwyg p {
 			margin: 0;
 		}
 		*/	
-		#masthead-nav {
-			#searchform{
-				display: none !important;
-			}
-				//clip: rect(0 0 0 0);
-				/*max-height: 0;
-				position: fixed !important;
-				overflow: hidden;
-				display: block;
-				zoom: 1;
-				top: 150px;
-				right: 0px;
-				left: 0px;
-				z-index: 99999;
-				background: #333;
-				ul {
-					margin: 0;
-					padding: 0;
-					float: right;
-					li {
-						float: none !important;
-						display: block;
-						margin: 0 !important;
-						a {
-							float:none !important;
-							display: block;
-							padding: 15px 30px !important;
-							background: #222;
-							.gradient(#303030, #222, #303030);
-							color: #f0f0f0 !important;
-							border-bottom: 1px solid #000 !important;
-							&:hover {
-								background: #000 !important;
-								color: #fff;
-							}
-						}
-						ul {
-							display: block !important;
-							opacity: 1 !important;
-							width: 100%;
-							background: #333;
-							top: 50px !important;
-							li {
-								border: 0 !important;
-								a {
-									padding-left: 50px !important;
-								}
-							}
-						}
-					}
-				}
-				&.opened {
-					z-index: 99999;
-					max-height: 9999px;
-					overflow:visible;
-				}
-			}*/
-			#searchform {
-				display: none !important;
-				/*width: 50%;
-				height: auto;
-				position: absolute;
-				top: 100px;
-				right: 0;
-				margin: 0;
-				> div {
-					width: auto;
-					height: auto;
-					input#s {
-						width: 100%;
-						height: auto;
-						.box-sizing(border-box);
-						padding: 8px 8px 8px 35px !important;
-						background: #111;
-						z-index: 1;
-						&:hover,
-						&:focus {
-							width: 100%;
-							padding: 8px 8px 8px 35px !important;
-						}
-					}
-					&:hover {
-						input#s {
-							width: 100%;
-							padding: 8px 8px 8px 35px !important;
-						}
-					}
-					&:before {
-						top: 5px;
-						left: 8px;
-					}*/
-				}
-			}
+		#searchform {
+			display: none !important;
 		}
 	}
 	.js #main-nav.opened {
@@ -2733,10 +2642,65 @@ body.wysiwyg p {
 			width: 220px;
 			font-size: 12px;
 		}
+		#masthead-nav {
+			//clip: rect(0 0 0 0);
+			max-height: 0;
+			position: fixed !important;
+			overflow: hidden;
+			display: block;
+			zoom: 1;
+			top: 20px;
+			right: 55px;
+			z-index: 99999;
+			background: #333;
+			
+			ul {
+				/*margin: 0;
+				padding: 0;
+				float: right;
+				li {
+					float: none !important;
+					display: block;
+					margin: 0 !important;
+					a {
+						float:none !important;
+						display: block;
+						padding: 15px 30px !important;
+						background: #222;
+						.gradient(#303030, #222, #303030);
+						color: #f0f0f0 !important;
+						border-bottom: 1px solid #000 !important;
+						&:hover {
+							background: #000 !important;
+							color: #fff;
+						}
+					}
+					ul {
+						display: block !important;
+						opacity: 1 !important;
+						width: 100%;
+						background: #333;
+						top: 50px !important;
+						li {
+							border: 0 !important;
+							a {
+								padding-left: 50px !important;
+							}
+						}
+					}
+				}
+			}*/
+			&.opened {
+				z-index: 99999;
+				max-height: 9999px;
+				overflow:visible;
+			}
+		}
+	}
 		#nav-toggle {
 			display: block;
 			position: absolute;
-			top: 25px;
+			top: 20px;
 			right: 55px;
 			color: #fff;
 			text-decoration: none;
