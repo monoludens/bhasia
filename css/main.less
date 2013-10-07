@@ -285,6 +285,32 @@ input[type=submit] {
 	.main-menu{
 		float: right;
 		margin-right: 10px;
+		#langnav{
+			float: right;
+			margin-top: 25px;
+			ul{
+				list-style: none;
+				li{
+					font-size: 11px;
+					display: block;
+					text-transform: uppercase;
+					background-color: @orange;
+					padding: 0px 5px;
+					margin-bottom: 2px;
+					height: 18px;
+					a{
+						text-decoration: none;
+						color: #fff;
+					}
+					&:hover {
+						background-color: #FFF;
+					}
+					&:hover a{
+						color: @orange;
+					}
+				}
+			}
+		}
 	}
 	.city-selector {
 		margin: 40px 0 0 20px;
@@ -2681,6 +2707,11 @@ body.wysiwyg p {
 					max-height: 9999px;
 					overflow:visible;
 				}
+			}
+			.main-menu{
+				#langnav{
+					margin-top: 10px;
+				}
 			}	
 		}
 	}
@@ -2738,32 +2769,7 @@ body.wysiwyg p {
  *qTranslate plugin
  */
 
-#langnav{
-	float: right;
-	margin-top: 25px;
-	ul{
-		list-style: none;
-		li{
-			font-size: 11px;
-			display: block;
-			text-transform: uppercase;
-			background-color: @orange;
-			padding: 0px 5px;
-			margin-bottom: 2px;
-			height: 18px;
-			a{
-				text-decoration: none;
-				color: #fff;
-			}
-			&:hover {
-				background-color: #FFF;
-			}
-			&:hover a{
-				color: @orange;
-			}
-		}
-	}
-}
+
 
 
 #masthead #masthead-nav nav ul>li>ul>li:hover>a{
