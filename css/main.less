@@ -161,6 +161,7 @@ body {
 @top2: 80px;
 @top3: 60px;
 @bottom: 70px;
+@bottom3: 55px;
 
 @gray: #999;
 @mural: #fbe900;
@@ -2664,10 +2665,12 @@ body.wysiwyg p {
 	#content, .displaying-map #content,
 	.middle-content {
 		top: @top3;
+		bottom: @bottom3;
 	}
 	.home .map-container,
 	.map-container {
 		top: @top3;
+		bottom: @bottom3;
 	}
 	.displaying-map #masthead,
 	#masthead {
@@ -2729,6 +2732,9 @@ body.wysiwyg p {
 		background-color: @orange;
 		padding: 10px;
 		.lsf
+	}
+	#colophon{
+		height: @bottom3;
 	}
 }
 
