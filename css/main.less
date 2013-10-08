@@ -2829,8 +2829,8 @@ body.wysiwyg p {
 			> li {
 				&:hover{
 					a{
-						color: #E4E4E4;
-						background-color: @orange;
+						color: #E4E4E4 !important;
+						background-color: @orange !important;
 					}
 				}
 				> a {
@@ -2838,13 +2838,15 @@ body.wysiwyg p {
 					&:hover {
 						color: @orange;
 						background-color: #E4E4E4;
-						border-color: darken(#E4E4E4, 10%);
+						border-color: darken(#E4E4E4, 10%) !important;
 					}
 				}
 				ul{/*-----submenu-----*/
+					
 					li{
-						background-color: darken(#E4E4E4, 10%);
+						background-color: darken(@orange, 10%) !important;
 						a{
+							color: #E4E4E4 !important;
 						}
 						/*&:hover{
 							a{
