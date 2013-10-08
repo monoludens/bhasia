@@ -849,11 +849,10 @@ input[type=submit] {
 	background: @secondary-color;
 	position: absolute;
 	top: @top;
-	bottom: @bottom;
+	bottom: (@bottom - 15px);
 	right: 0;
 	padding: 40px 0 0 0;
 	overflow: scroll;
-	overflow-x: hidden;
 	.box-sizing(border-box);
 	margin: 0;
 	z-index: 0;
@@ -1651,9 +1650,9 @@ input[type=submit] {
 #content {
 	position: static;
 	overflow: scroll;
-	overflow-x: hidden;
 	padding-top: @top;
 	padding-bottom: @bottom;
+	z-index: 100;
 	&::-webkit-scrollbar {
 		width: 10px;
 		background: #444;
@@ -1907,7 +1906,7 @@ input[type=submit] {
 }
 
 #colophon {
-	position: fixed;
+	position: absolute;
 	bottom: 0;
 	height: @bottom;
 	width: 100%;
@@ -1915,6 +1914,7 @@ input[type=submit] {
 	padding-top: 10px;	
 	background: @main-color;
 	overflow: visible;
+	z-index: 999999;
 	.logo-ruler{
 		width: 767px;
 		float: left;
@@ -2693,12 +2693,12 @@ body.wysiwyg p {
 	#content, .displaying-map #content,
 	.middle-content {
 		top: @top3;
-		bottom: @bottom3;
+		bottom: (@bottom3 - 15px);
 	}
 	.home .map-container,
 	.map-container {
 		top: @top3;
-		bottom: @bottom3;
+		bottom: (@bottom3 - 15px);
 	}
 	.displaying-map #masthead,
 	#masthead {
