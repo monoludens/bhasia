@@ -853,6 +853,7 @@ input[type=submit] {
 	right: 0;
 	padding: 40px 0 0 0;
 	overflow: scroll;
+	overflow-x: hidden;
 	.box-sizing(border-box);
 	margin: 0;
 	z-index: 0;
@@ -1649,7 +1650,8 @@ input[type=submit] {
 
 #content {
 	position: static;
-	overflow: visible;
+	overflow: scroll;
+	overflow-x: hidden;
 	padding-top: @top;
 	padding-bottom: @bottom;
 	&::-webkit-scrollbar {
