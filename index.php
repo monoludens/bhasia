@@ -34,11 +34,11 @@
 		
 	<?php get_template_part('loop'); ?>
 
-	
+	<?php get_template_part('content', 'popular'); ?>
 
 	<?php endif; ?>-->
 	
-	<?php get_template_part('content'); ?>
+	<?php do_action('afdm_loop_before_artwork_header'); ?>
 
 	<?php do_action('afdm_before_content'); ?>
 
