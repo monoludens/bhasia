@@ -755,13 +755,13 @@ input[type=submit] {
 		position: absolute;
 		top: 10px;
 		right: 10px;
-		z-index: 100;
+		z-index: 99;
 	}
 	.category-filters {
 		position: absolute;
 		top: 20px;
 		right: 20px;
-		z-index: 100;
+		z-index: 99;
 		.box-shadow(0 0 10px rgba(0,0,0,0.8));
 		li {
 			font-size: 12px;
@@ -853,7 +853,7 @@ input[type=submit] {
 	overflow: visible;
 	.box-sizing(border-box);
 	margin: 0;
-	z-index: 100;
+	z-index: 99;
 	.transition(right .2s ease-in-out);
 	a {
 		color: #f0f0f0;
@@ -907,7 +907,7 @@ input[type=submit] {
 		background: transparent;
 		padding: 0;
 		margin: -40px 0 0;
-		z-index: 200;
+		z-index: 100;
 		background: #444;
 		img {
 			margin: 0;
@@ -1911,7 +1911,7 @@ input[type=submit] {
 	padding-top: 10px;	
 	background: @main-color;
 	overflow: visible;
-	z-index: 9999;
+	z-index: 100 !important;
 	.logo-ruler{
 		width: 767px;
 		float: left;
@@ -1974,7 +1974,7 @@ input[type=submit] {
 				.text {
 					display: none;
 					position: absolute;
-					z-index: 9999;
+					z-index: 1000;
 					bottom: 40px;
 					left: 50%;
 					margin-left: -90px;
@@ -1993,7 +1993,7 @@ input[type=submit] {
 						position: absolute;
 						bottom: -10px;
 						left: 50%;
-						z-index: 1000;
+						z-index: 999;
 					}
 				}
 				&:hover {
@@ -2715,7 +2715,7 @@ body.wysiwyg p {
 				zoom: 1;
 				top: 60px;
 				right: 0px;
-				z-index: 99999;
+				z-index: 100;
 				background: #E4E4E4;
 				width: 100%;
 				padding-right: 55px;
