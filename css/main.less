@@ -134,7 +134,7 @@ body {
 }
 
 .container{
-	position: relative;
+	// position: relative;
 	width: 100%;
 	margin: 0 auto;
 	padding: 0;
@@ -852,7 +852,7 @@ input[type=submit] {
 	bottom: @bottom;
 	right: 0;
 	padding: 40px 0 0 0;
-	overflow: scroll;
+	overflow-y: scroll;
 	.box-sizing(border-box);
 	margin: 0;
 	z-index: 0;
@@ -1648,11 +1648,10 @@ input[type=submit] {
 }
 
 #content {
-	position: static;
-	overflow: scroll;
+	// position: static;
+	overflow-y: scroll;
 	padding-top: @top;
 	padding-bottom: @bottom;
-	z-index: 100;
 	&::-webkit-scrollbar {
 		width: 10px;
 		background: #444;
@@ -1906,7 +1905,7 @@ input[type=submit] {
 }
 
 #colophon {
-	position: absolute;
+	position: fixed;
 	bottom: 0;
 	height: @bottom;
 	width: 100%;
