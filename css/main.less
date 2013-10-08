@@ -750,6 +750,7 @@ input[type=submit] {
 	left: 0;
 	right: 35%;
 	height: auto;
+	overflow: visible;
 	.home-link {
 		position: absolute;
 		top: 10px;
@@ -849,8 +850,7 @@ input[type=submit] {
 	bottom: @bottom;
 	right: 0;
 	padding: 40px 0 0 0;
-	overflow: auto;
-	overflow-x: hidden;
+	overflow: visible;
 	.box-sizing(border-box);
 	margin: 0;
 	z-index: 100;
@@ -1910,7 +1910,8 @@ input[type=submit] {
 	padding: 0;
 	padding-top: 10px;	
 	background: @main-color;
-	z-index: 101;
+	overflow: visible;
+	z-index: 9999;
 	.logo-ruler{
 		width: 767px;
 		float: left;
