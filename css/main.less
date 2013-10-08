@@ -2619,9 +2619,14 @@ body.wysiwyg p {
 }
 
 @media screen and (max-width: 767px) {
-	#content,
+
+	#content, .displaying-map #content,
 	.middle-content {
-		padding-top: @top2;
+		top: @top2;
+	}
+	.home .map-container,
+	.map-container {
+		top: @top2;
 	}
 	.hide-if-mobile {
 		display: none !important;
