@@ -4,7 +4,7 @@
 		<header class="single-post-header">
 			<div class="container">
 				<div class="twelve columns">
-					<h1><a href="<?php echo afdm_artists_get_archive_link(); ?>" title="<?php _e('Artists', 'arteforadomuseu'); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/artist-logo.png" /><?php _e('Artists', 'arteforadomuseu'); ?></a></h1>
+					<h1><a href="<?php echo afdm_artists_get_archive_link(); ?>" title="<?php _e('Artists', 'arteforadomuseu'); ?>"><?php _e('Artists', 'arteforadomuseu'); ?></a></h1>
 					<?php if(isset($_GET['s'])) : ?>
 						<h2><?php echo __('Search results for:', 'arteforadomuseu') . ' <i>' . $_GET['s'] . '</i>'; ?></h2>
 					<?php else : ?>
