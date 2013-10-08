@@ -2799,3 +2799,111 @@ body.wysiwyg p {
 	right: 0;
 	visibility: hidden;
 }
+
+
+
+
+/* ORANGE CRAZYNESS */
+#masthead,
+.displaying-map #masthead {
+	background: @orange;
+}
+
+.main-menu #langnav ul li{
+	background-color: @main-color;
+	a{
+		color: @orange
+	}
+	&:hover {
+		background-color: #FFF;
+	}
+	&:hover a{
+		color: @main-color;
+	}
+}
+
+
+#masthead-nav {
+	nav {
+		ul { /*-----menu-----*/
+			> li {
+				&:hover{
+					a{
+						color: #E4E4E4;
+						background-color: @orange;
+					}
+				}
+				> a {
+					color: #E4E4E4;
+					&:hover {
+						color: @orange;
+						background-color: #E4E4E4;
+						border-color: darken(#E4E4E4, 10%);
+					}
+				}
+				ul{/*-----submenu-----*/
+					li{
+						background-color: darken(#E4E4E4, 10%);
+						a{
+						}
+						/*&:hover{
+							a{
+								color: @orange;
+								background-color: @secondary-color;
+								&:hover{
+									color: #fff;
+									background-color: @orange;
+								}
+							}
+						}*/
+					}
+				}
+			}
+		}
+		#searchform {
+			> div {
+				background: #E4E4E4;
+				input#s {
+					background: transparent;
+					&:hover,
+					&:focus {
+						background-color: #141414;
+					}
+				}
+				&:hover {
+					input#s {
+						background-color: #141414;
+					}
+				}
+			}
+		}
+		.user-meta {
+			float: left;
+			position: relative;
+			z-index: 100;
+			.dropdown-title {
+				border: 1px solid #111;
+				color: @orange;
+				font-weight: 800;
+				.gradient(@main-color, #191919, @main-color);
+				text-shadow: 1px 1px 1px rgba(0,0,0,1);
+				.arrow {
+				}
+				.lsf.icon {
+					margin-right: 10px;
+				}
+			}
+			.dropdown-content {
+				background: #f0f0f0;
+				.gradient(#f0f0f0, #ddd, #f0f0f0);
+				.box-shadow(0 0 15px rgba(0,0,0,0.6));
+				.login-content {
+					margin: 10px;
+					p {
+						color: #999;
+					}
+				}
+			}
+		}	
+	}
+}
