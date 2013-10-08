@@ -4,7 +4,7 @@
 
 <section id="content">
 
-	<?php if(!is_paged()) : ?>
+	<!--<?php if(!is_paged()) : ?>
 
 		<?php
 		query_posts(array(
@@ -31,11 +31,13 @@
 		wp_reset_query();
 		?>
 
-		<?php get_template_part('content', 'popular'); ?>
+		
+
+	<?php endif; ?>-->
+
+	<?php get_template_part('content', 'popular'); ?>
 
 		<?php do_action('afdm_before_content'); ?>
-
-	<?php endif; ?>
 
 	<div class="child-section">
 		<!-- <div class="section-title">
