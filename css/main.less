@@ -746,11 +746,13 @@ input[type=submit] {
 .map-container {
 	position: absolute;
 	top: @top;
-	bottom: (@bottom - 10);
+	bottom: @bottom;
 	left: 0;
 	right: 35%;
 	height: auto;
 	overflow: visible;
+	z-index: 0;
+	min-height: 10px !important;
 	.home-link {
 		position: absolute;
 		top: 10px;
@@ -1911,7 +1913,6 @@ input[type=submit] {
 	padding-top: 10px;	
 	background: @main-color;
 	overflow: visible;
-	z-index: 100;
 	.logo-ruler{
 		width: 767px;
 		float: left;
