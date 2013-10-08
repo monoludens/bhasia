@@ -849,7 +849,7 @@ input[type=submit] {
 	background: @secondary-color;
 	position: absolute;
 	top: @top;
-	bottom: (@bottom - 15px);
+	bottom: @bottom;
 	right: 0;
 	padding: 40px 0 0 0;
 	overflow: scroll;
@@ -1914,7 +1914,6 @@ input[type=submit] {
 	padding-top: 10px;	
 	background: @main-color;
 	overflow: visible;
-	z-index: 999999;
 	.logo-ruler{
 		width: 767px;
 		float: left;
@@ -2693,12 +2692,12 @@ body.wysiwyg p {
 	#content, .displaying-map #content,
 	.middle-content {
 		top: @top3;
-		bottom: (@bottom3 - 15px);
+		bottom: @bottom3;
 	}
 	.home .map-container,
 	.map-container {
 		top: @top3;
-		bottom: (@bottom3 - 15px);
+		bottom: @bottom3;
 	}
 	.displaying-map #masthead,
 	#masthead {
