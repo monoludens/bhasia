@@ -20,7 +20,7 @@
 				<?php the_post_thumbnail('page-featured'); ?>
 				<h1><?php the_title(); ?></h1>
 				<?php if(afdm_has_artist()) : ?>
-					<p class="artists"><span class="lsf">&#xE137;</span> <?php _e('Artists', 'arteforadomuseu'); ?>: <?php afdm_the_artist(); ?></p>
+					<p class="artists"><?php afdm_the_artist(); ?></p>
 				<?php endif; ?>
 			</header>
 			<div class="menu">
