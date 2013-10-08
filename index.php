@@ -30,11 +30,11 @@
 		endif; 
 		wp_reset_query();
 		?>
-
+	
 		
 
 	<?php endif; ?>-->
-	<?php get_template_part('loop', 'carousel'); ?>
+	<?php get_template_part('loop'); ?>
 
 	<?php get_template_part('content', 'popular'); ?>
 
