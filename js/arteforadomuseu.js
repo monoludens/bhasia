@@ -34,11 +34,11 @@
 				show(current);
 			}, 200);
 
-			if(autorun)
-				var t = setInterval(next, 8000);
-
-			if(items.length === 1)
+			if(items.length === 1){
 				controllers.hide();
+				if(autorun)
+					var t = setInterval(next, 8000);
+			}
 
 			controllers.on('click', 'a', function() {
 
@@ -60,7 +60,7 @@
 
 				hide(current);
 
-				if(current.is('li:last'))
+				if(current.is('li:last-child'))
 					current = items.first()
 				else
 					current = current.next('li');
@@ -73,7 +73,7 @@
 
 				hide(current);
 
-				if(current.is('li:first'))
+				if(current.is('li:first-child'))
 					current = items.last()
 				else
 					current = current.prev('li');

@@ -144,3 +144,17 @@ function afdm_flush_rewrite() {
 	}
 }
 add_action('init', 'afdm_flush_rewrite');
+
+function bhasia_artist_permalink($url, $post) {
+
+	if(get_post_type($post->ID) == 'artist') {
+		$ids = get_post_meta($post_id, '_artworks');
+		if($ids) {
+			$url = get_permalink(array_shift($ids));
+		}	
+	}
+
+	return $url;
+
+}
+add_filter('post_type_link', 'bhasia_artist_permalink', 10, 2);
