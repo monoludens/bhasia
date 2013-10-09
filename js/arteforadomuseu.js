@@ -34,11 +34,11 @@
 				show(current);
 			}, 200);
 
-			if(autorun)
-				var t = setInterval(next, 8000);
-
-			if(items.length === 1)
+			if(items.length === 1){
 				controllers.hide();
+				if(autorun)
+					var t = setInterval(next, 8000);
+			}
 
 			controllers.on('click', 'a', function() {
 
@@ -60,7 +60,7 @@
 
 				hide(current);
 
-				if(current.is('li:last'))
+				if(current.is('li:last-child'))
 					current = items.first()
 				else
 					current = current.next('li');
@@ -73,7 +73,7 @@
 
 				hide(current);
 
-				if(current.is('li:first'))
+				if(current.is('li:first-child'))
 					current = items.last()
 				else
 					current = current.prev('li');
@@ -99,7 +99,7 @@
 	 * Subsection
 	 */
 
-	$(document).ready(function() {
+	jeo.mapReady(function() {
 
 		var s = subsection.init();
 
@@ -188,6 +188,8 @@
 
 			this.subcontent = $('#' + id + '.sub-content');
 
+			this.previousMapRight = $('.map-container').css('right');
+
 			if(this.subcontent.length) {
 
 				this.subcontent.show().addClass('active').css({
@@ -196,6 +198,12 @@
 				this.parent.css({
 					right: this.subcontent.width()
 				});
+
+				$('.map-container').css({
+					right: $('#content').width() * 2
+				});
+
+				jeo.map.invalidateSize(true);
 
 			}
 
@@ -212,6 +220,12 @@
 			section.subcontents.removeClass('active').css({
 				right: -section.subcontents.width()
 			});
+
+			$('.map-container').css({
+				right: this.previousMapRight
+			});
+
+			jeo.map.invalidateSize(true);
 
 			window.location.hash = '';
 
