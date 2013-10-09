@@ -158,3 +158,4 @@ function bhasia_artist_permalink($url, $post) {
 
 }
 add_filter('post_type_link', 'bhasia_artist_permalink', 10, 2);
+//
