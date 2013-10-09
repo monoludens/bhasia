@@ -101,7 +101,9 @@
 
 	jeo.mapReady(function() {
 
-		var s = subsection.init();
+		subsection.init();
+
+		subsection.open('images');
 
 		$('[data-subsection]').click(function() {
 
@@ -114,7 +116,7 @@
 
 			var toggler = $(this);
 
-			subsection.close(s);
+			subsection.close();
 
 			if($('.map-container .map').hasClass('open')) {
 				$('.map-container .map').removeClass('open');
@@ -184,7 +186,7 @@
 		},
 		open: function(id) {
 
-			this.close(this);
+			this.close();
 
 			this.subcontent = $('#' + id + '.sub-content');
 
@@ -211,14 +213,14 @@
 
 			return this;
 		},
-		close: function(section) {
+		close: function() {
 
-			section.parent.css({
+			this.parent.css({
 				right: 0
 			});
 
-			section.subcontents.removeClass('active').css({
-				right: -section.subcontents.width()
+			this.subcontents.removeClass('active').css({
+				right: -this.subcontents.width()
 			});
 
 			$('.map-container').css({
@@ -229,9 +231,9 @@
 
 			window.location.hash = '';
 
-			return section;
+			return this;
 
-		},
+		}
 	}
 
 	/*

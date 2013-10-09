@@ -148,7 +148,7 @@ add_action('init', 'afdm_flush_rewrite');
 function bhasia_artist_permalink($url, $post) {
 
 	if(get_post_type($post->ID) == 'artist') {
-		$ids = get_post_meta($post_id, '_artworks');
+		$ids = get_post_meta($post->ID, '_artworks');
 		if($ids) {
 			$url = get_permalink(array_shift($ids));
 		}	
