@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <?php if(have_posts()) : ?>
-		<section id="content" class="single-post">
+		<section id="content2" class="single-post">
 			<header class="single-post-header">
 				<div class="container">
 					<div class="twelve columns">
