@@ -14,7 +14,7 @@
 
 	<?php jeo_map(); ?>
 
-	<article class="single-post-container">
+	<div class="single-post-container">
 		<section id="content" class="single-post">
 			<header class="single-post-header clearfix">
 				<?php the_post_thumbnail('page-featured'); ?>
@@ -129,7 +129,7 @@
 				</div>
 			</div>
 		</section>
-	</article>
+	</div>
 
 <?php endif; ?>
 
