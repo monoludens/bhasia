@@ -36,7 +36,7 @@
 				<div class="social-interaction">
 					<a href="https://twitter.com/BHAsia" class="twitter-follow-button" data-show-count="false" data-lang="pt" data-show-screen-name="false">Seguir @arteforadomuseu</a>
 					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-					<div class="fb-like" data-href="https://www.facebook.com/bhasia2013" data-send="false" data-layout="button_count" data-width="450" data-show-faces="true" data-font="verdana" data-colorscheme="dark"></div>
+					<div class="fb-like" data-href="https://www.facebook.com/bhasia2013" data-send="false" data-layout="button_count" data-width="450" data-show-faces="true" data-font="verdana" data-colorscheme="light"></div>
 				</div>
 				<div class="social-links">
 					<a href="https://www.facebook.com/bhasia2013" class="facebook lsf" rel="external" target="_blank">&#xE047;</a>
