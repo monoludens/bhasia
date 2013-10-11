@@ -2611,18 +2611,6 @@ body.wysiwyg p {
 			}
 		}
 	}
-
-	.displaying-map #content .single-post-header {
-		h1{
-			font-size: 12px;
-			line-height: 12px;
-			padding: 15px 15px;
-			font-weight: 300px;
-		}
-		.artists {
-			padding: 0 0 20px 15px;
-		}
-	}
 	#colophon {
 		.logo-ruler {
 		    float: left;
@@ -2649,10 +2637,20 @@ body.wysiwyg p {
 }
 
 @media screen and (max-width: 767px) {
-
 	#content, .displaying-map #content,
 	.middle-content {
 		top: @top2;
+		.single-post-header {
+			h1{
+				font-size: 12px;
+				line-height: 12px;
+				padding: 15px 15px;
+				font-weight: 300px;
+			}
+			.artists {
+				padding: 0 0 20px 15px;
+			}
+		}
 	}
 	.home .map-container,
 	.map-container {
