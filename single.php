@@ -14,7 +14,7 @@
 
 	<?php jeo_map(); ?>
 
-	<article>
+	<article class="single-post-container">
 		<section id="content" class="single-post">
 			<header class="single-post-header clearfix">
 				<?php the_post_thumbnail('page-featured'); ?>

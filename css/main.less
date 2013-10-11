@@ -1646,6 +1646,10 @@ input[type=submit] {
 	}
 }
 
+.single-post-container{
+	overflow: hidden;
+}
+
 #content {
 	// position: static;
 	overflow-y: scroll;
@@ -1666,13 +1670,11 @@ input[type=submit] {
 	&.single-post{
 	width: 100%%;
 	height: auto;
-	min-width: 350px;
-	color: #f0f0f0;
-	background: @secondary-color;
 	position: absolute;
 	top: @top;
 	bottom: @bottom;
 	right: 0;
+	left: 0;
 	padding: 40px 0 0 0;
 	overflow-y: scroll;
 	margin: 0;
