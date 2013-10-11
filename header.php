@@ -101,7 +101,7 @@
 									</li>
 								<?php endif; ?>-->
 							</ul>
-							<?php wp_nav_menu(array('theme_location' => 'footer_menu')); ?>
+							<!--<?php wp_nav_menu(array('theme_location' => 'footer_menu')); ?>-->
 						</nav>
 						<?php get_search_form(); ?>
 					</div>
@@ -110,4 +110,3 @@
 		</div>
 	</header>
 
-	
