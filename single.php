@@ -1,20 +1,22 @@
 <?php get_header(); ?>
 
-<?php if(have_posts()) : the_post(); ?>
+<div class="single-post-container">
 
-	<?php
-	$links = afdm_get_links();
-	$videos = afdm_get_videos();
-	$images = afdm_get_artwork_images();
-	$featured_video_id = afdm_get_featured_video_id();
-	$dimensions = afdm_get_artwork_dimensions();
-	$creation_date = afdm_get_creation_date();
-	$termination_date = afdm_get_termination_date();
-	?>
+	<?php if(have_posts()) : the_post(); ?>
 
-	<?php jeo_map(); ?>
+		<?php
+		$links = afdm_get_links();
+		$videos = afdm_get_videos();
+		$images = afdm_get_artwork_images();
+		$featured_video_id = afdm_get_featured_video_id();
+		$dimensions = afdm_get_artwork_dimensions();
+		$creation_date = afdm_get_creation_date();
+		$termination_date = afdm_get_termination_date();
+		?>
 
-	<div class="single-post-container">
+		<?php jeo_map(); ?>
+
+		
 		<section id="content" class="single-post">
 			<header class="single-post-header clearfix">
 				<?php the_post_thumbnail('page-featured'); ?>
@@ -129,8 +131,6 @@
 				</div>
 			</div>
 		</section>
-	</div>
-
-<?php endif; ?>
-
+	<?php endif; ?>
+</div>
 <?php get_footer(); ?>
