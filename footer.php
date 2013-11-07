@@ -42,7 +42,7 @@
 					<a href="https://www.facebook.com/bhasia2013" class="facebook lsf" rel="external" target="_blank">&#xE047;</a>
 					<a href="http://instagram.com/bhasia#" class="instagram lsf" rel="external" target="_blank">&#xE155;</a>
 					<a href="https://twitter.com/BHAsia" class="twitter lsf" rel="external" target="_blank">&#xE12f;</a>
-					<!-- <a href="http://www.youtube.com/arteforadomuseu" class="youtube lsf" rel="external" target="_blank">&#xE141;</a> -->
+					<a href="http://www.bhasia.art.br/video/" class="youtube lsf" rel="external" target="_blank">&#xE141;</a>
 				</div>
 			</div>
 		</div>
